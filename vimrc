@@ -118,3 +118,6 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " BufExplorer
 nnoremap <F1> :BufExplorer<CR>
+
+" Fugitive
+set diffopt+=vertical
