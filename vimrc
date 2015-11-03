@@ -102,6 +102,7 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor
 
 " NERD tree
 nmap <silent> <C-T> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$']
 let NERDTreeQuitOnOpen = 1
 
 " Airline
