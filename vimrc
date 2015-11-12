@@ -6,6 +6,9 @@ set number
 set t_Co=256
 let mapleader=","
 
+" Change buffer without closing them
+set hidden
+
 " Turn on the WiLd menu
 set wildmenu
 
