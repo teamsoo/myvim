@@ -86,8 +86,8 @@ highlight MatchParen cterm=bold ctermbg=yellow
 nnoremap <silent> n n:call HLNext(0.1)<cr>
 nnoremap <silent> N N:call HLNext(0.1)<cr>
 function! HLNext (blinktime)
-  let target_pat = '\c\%#'.@/
-  let ring = matchadd('ErrorMsg', target_pat, 101)
+  let target_pat='\c\%#'.@/
+  let ring=matchadd('ErrorMsg', target_pat, 101)
   redraw
   exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
   call matchdelete(ring)
@@ -109,16 +109,16 @@ set splitright
 execute pathogen#infect()
 
 " CtrlP
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
+let g:ctrlp_working_path_mode='ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/flask
 
 " NERD tree
 nmap <silent> <C-T> :NERDTreeToggle<CR>
 let NERDTreeIgnore=['\.pyc$']
-let NERDTreeQuitOnOpen = 1
+let NERDTreeQuitOnOpen=1
 
 " Airline
 set laststatus=2
@@ -132,3 +132,7 @@ nnoremap <F1> :BufExplorer<CR>
 
 " Fugitive
 set diffopt+=vertical
+
+" Fugitive
+let g:gitgutter_signs=0
+nmap <Leader>gg :GitGutterLineHighlightsToggle<CR>
