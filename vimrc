@@ -136,3 +136,6 @@ nmap <leader>e :BufExplorer<CR>
 
 " Fugitive
 set diffopt+=vertical
+
+" nerdcommenter
+filetype plugin on
