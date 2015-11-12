@@ -115,6 +115,7 @@ execute pathogen#infect()
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
 let g:ctrlp_working_path_mode='ra'
+let g:ctrlp_open_multiple_files = 'ij'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/flask
 
