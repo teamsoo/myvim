@@ -13,3 +13,4 @@ Clone this repo on home directory and run `install.sh`
 - Vim-airline
 - Vim-fugitive
 - Vim-Commentary
+- delimitMate
