@@ -131,5 +131,8 @@ let g:airline_powerline_fonts=1
 set guifont=Sauce_Code_Powerline:h10
 let g:airline#extensions#branch#enabled=1
 
+" BufExplorer
+nnoremap <F1> :BufExplorer<CR>
+
 " Fugitive
 set diffopt+=vertical
