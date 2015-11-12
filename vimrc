@@ -4,6 +4,7 @@
 syntax on
 set number
 set t_Co=256
+let mapleader=","
 
 " Turn on the WiLd menu
 set wildmenu
@@ -86,6 +87,14 @@ function! HLNext (blinktime)
   call matchdelete(ring)
   redraw
 endfunction
+
+"Navigate split easier
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugins
