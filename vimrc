@@ -113,7 +113,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/flask
 
 " NERD tree
 nmap <silent> <C-T> :NERDTreeToggle<CR>
@@ -122,14 +122,10 @@ let NERDTreeQuitOnOpen = 1
 
 " Airline
 set laststatus=2
-"let g:airline_theme='light'
+let g:airline_theme='light'
 let g:airline_powerline_fonts=1
 set guifont=Sauce_Code_Powerline:h10
 let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#tab_nr_type=1
-let g:airline#extensions#tabline#show_buffers=0
-let g:airline#extensions#tabline#fnamemod = ':t'
 
 " BufExplorer
 nnoremap <F1> :BufExplorer<CR>
