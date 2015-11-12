@@ -75,7 +75,7 @@ set noswapfile
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Toggle paste monde with F2
 set pastetoggle=<F2>
-nnoremap <F3> :noh<CR>
+nnoremap <silent> <F3> :noh<CR>
 
 " Highlight stupid whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
