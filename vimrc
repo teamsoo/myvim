@@ -56,6 +56,9 @@ set ai
 set si
 set wrap
 
+" Enter to add new line
+nmap <CR> o<Esc>k
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -91,7 +94,7 @@ function! HLNext (blinktime)
   redraw
 endfunction
 
-"Navigate split easier
+" Navigate split easier
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
