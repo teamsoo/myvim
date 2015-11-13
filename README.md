@@ -12,6 +12,6 @@ Clone this repo on home directory and run `install.sh`
 - Tmuxline
 - Vim-airline
 - Vim-fugitive
-- Vim-Commentary
 - delimitMate
 - vim-multiple-cursors
+- NERDCommenter
